@@ -12,7 +12,7 @@ function processDOMNode(node) {
     const text = node.textContent;
     
     // Case-insensitive regex to match 'Trump' or 'Donald Trump'
-    const regex = /(donald\s+)?trump/gi;
+    const regex = /\b(donald\s+)?trump\b/gi;
     
     if (regex.test(text)) {
       // Create a wrapper span
