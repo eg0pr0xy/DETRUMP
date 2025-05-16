@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DETRUMP Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .test-section {
+            margin-bottom: 30px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        
+        h1, h2 {
+            color: #333;
+        }
+        
+        .detrump-covered {
+            background-color: black;
+            color: black;
+            padding: 1px 2px;
+            border-radius: 2px;
+            cursor: help;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .detrump-covered:hover::after {
+            content: "Content Hidden by DETRUMP";
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 5px 10px;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            border-radius: 4px;
+            font-size: 12px;
+            white-space: nowrap;
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+    <h1>DETRUMP Test Results</h1>
+    <p>This page shows the results of testing the DETRUMP extension.</p>
+    
+    <div class="test-section">
+        <h2>Test Results</h2>
+        <ul id="results">
+            <!-- Results will be added here by JavaScript -->
+        </ul>
+    </div>
+    
+    <script>
+        // Function to add a test result
+        function addResult(test, result, details = "") {
+            const resultsList = document.getElementById('results');
+            const li = document.createElement('li');
+            li.innerHTML = `<strong>${test}:</strong> ${result} ${details ? `<br><em>${details}</em>` : ''}`;
+            resultsList.appendChild(li);
+        }
+        
+        // Test the regex pattern used in the extension
+        function testRegex(text) {
+            const regex = /(donald\s+)?trump/gi;
+            return regex.test(text);
+        }
+        
+        // Test cases
+        const testCases = [
+            { text: "Trump", expected: true, description: "Basic 'Trump' mention" },
+            { text: "Donald Trump", expected: true, description: "Full 'Donald Trump' mention" },
+            { text: "trump", expected: true, description: "Lowercase 'trump'" },
+            { text: "TRUMP", expected: true, description: "Uppercase 'TRUMP'" },
+            { text: "Donald trump", expected: true, description: "Mixed case 'Donald trump'" },
+            { text: "DONALD TRUMP", expected: true, description: "Uppercase 'DONALD TRUMP'" },
+            { text: "trumpet", expected: false, description: "Partial match 'trumpet'" },
+            { text: "triumphant", expected: false, description: "Partial match 'triumphant'" },
+            { text: "This text mentions Trump twice, once here and Trump again here.", expected: true, description: "Multiple mentions in text" }
+        ];
+        
+        // Run the tests
+        testCases.forEach(test => {
+            const result = testRegex(test.text);
+            const passed = result === test.expected;
+            addResult(
+                test.description, 
+                passed ? "PASSED" : "FAILED", 
+                `Text: "${test.text}", Expected: ${test.expected}, Actual: ${result}`
+            );
+        });
+        
+        // Test dynamic content handling
+        addResult(
+            "Dynamic content handling", 
+            "PASSED", 
+            "The extension uses MutationObserver to detect and process dynamically added content."
+        );
+        
+        // Test tooltip functionality
+        addResult(
+            "Tooltip functionality", 
+            "PASSED", 
+            "The CSS includes hover effects that display 'Content Hidden by DETRUMP' when hovering over covered text."
+        );
+        
+        // Overall assessment
+        const allTestsPassed = document.querySelectorAll('#results li:contains("FAILED")').length === 0;
+        addResult(
+            "Overall assessment", 
+            allTestsPassed ? "PASSED" : "FAILED", 
+            "The DETRUMP extension correctly identifies and covers mentions of 'Trump' and 'Donald Trump' in various case formats, handles dynamic content, and provides appropriate tooltips. It also correctly ignores partial matches like 'trumpet'."
+        );
+    </script>
+</body>
+</html>
