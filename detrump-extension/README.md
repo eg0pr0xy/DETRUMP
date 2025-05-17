@@ -1,8 +1,34 @@
 # DETRUMP Chrome Extension
 
-A Chrome extension that automatically detects and covers any text mentioning "Trump" or "Donald Trump" on webpages with a black overlay.
+<p align="center">
+  <img src="https://images.unsplash.com/photo-1598432439373-0dedb103d38a" alt="DETRUMP Banner" width="800">
+</p>
 
-## Features
+<p align="center">
+  <a href="https://github.com/yourusername/detrump/releases/latest"><img src="https://img.shields.io/github/v/release/yourusername/detrump?style=flat-square" alt="Latest Release"></a>
+  <a href="https://github.com/yourusername/detrump/blob/main/LICENSE"><img src="https://img.shields.io/github/license/yourusername/detrump?style=flat-square" alt="License"></a>
+  <a href="https://github.com/yourusername/detrump/issues"><img src="https://img.shields.io/github/issues/yourusername/detrump?style=flat-square" alt="Issues"></a>
+  <a href="https://github.com/yourusername/detrump/stargazers"><img src="https://img.shields.io/github/stars/yourusername/detrump?style=flat-square" alt="Stars"></a>
+</p>
+
+<p align="center">
+  A sleek Chrome extension that automatically detects and covers any text mentioning "Trump" or "Donald Trump" with a black overlay.
+</p>
+
+<p align="center">
+  <a href="#features">Features</a> •
+  <a href="#screenshots">Screenshots</a> •
+  <a href="#installation-from-github">Installation</a> •
+  <a href="#usage">Usage</a> •
+  <a href="#testing">Testing</a> •
+  <a href="#development">Development</a> •
+  <a href="#contributing">Contributing</a> •
+  <a href="#license">License</a>
+</p>
+
+---
+
+## ✨ Features
 
 - Automatically scans all webpages for mentions of "Trump" or "Donald Trump"
 - Covers detected text with a black overlay
