@@ -127,7 +127,7 @@ To run the tests:
 - **To change the tooltip text**: Edit the content in both the `title` attribute in `content.js` and the `content` property in the CSS
 - **To modify detection patterns**: Edit the regex pattern in `content.js`
 
-## Contributing
+## 🤝 Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
