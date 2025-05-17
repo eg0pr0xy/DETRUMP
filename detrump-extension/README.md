@@ -141,7 +141,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Acknowledgments
+## 🙏 Acknowledgments
 
 - Created as a demonstration project
 - Inspired by the need for more peaceful web browsing
