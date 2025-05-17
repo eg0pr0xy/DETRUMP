@@ -86,7 +86,7 @@
    - Select the cloned repository folder
    - The extension should now be installed and active!
 
-## Usage
+## 🚀 Usage
 
 The extension works automatically on all webpages. No configuration required!
 
