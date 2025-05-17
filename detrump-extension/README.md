@@ -41,7 +41,7 @@
 
 *[Add screenshots of the extension in action here]*
 
-## Installation from GitHub
+## 📥 Installation from GitHub
 
 ### Method 1: Download from Releases (Recommended)
 
