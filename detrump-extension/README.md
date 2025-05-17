@@ -105,7 +105,7 @@ To run the tests:
 - Open either file in a browser after installing the extension
 - For `test_detailed.html`, check the test results displayed on the page
 
-## Development
+## 🛠️ Development
 
 ### Extension Structure
 
