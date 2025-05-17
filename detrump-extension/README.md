@@ -37,7 +37,7 @@
 - Case-insensitive detection (works with "trump", "TRUMP", etc.)
 - Smart word boundary detection (won't affect words like "trumpet" or "triumphant")
 
-## Screenshots
+## 📸 Screenshots
 
 *[Add screenshots of the extension in action here]*
 
