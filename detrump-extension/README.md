@@ -94,7 +94,7 @@ The extension works automatically on all webpages. No configuration required!
 - The mentions will be automatically covered with a black overlay
 - Hover over the black overlay to see the tooltip "Content Hidden by DETRUMP"
 
-## Testing
+## 🧪 Testing
 
 The extension includes two test files:
 
