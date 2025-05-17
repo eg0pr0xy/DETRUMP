@@ -17,7 +17,21 @@ A Chrome extension that automatically detects and covers any text mentioning "Tr
 
 ## Installation from GitHub
 
-### Method 1: Direct Installation
+### Method 1: Download from Releases (Recommended)
+
+1. **Download the latest release**
+   - Go to the [Releases page](https://github.com/yourusername/detrump/releases/latest)
+   - Download the `detrump-extension.zip` file
+   - Extract the ZIP file to a location on your computer
+
+2. **Install in Chrome**
+   - Open Chrome and navigate to `chrome://extensions/`
+   - Enable "Developer mode" by toggling the switch in the top-right corner
+   - Click "Load unpacked" button that appears
+   - Select the extracted extension folder
+   - The extension should now be installed and active!
+
+### Method 2: Direct Installation from Repository
 
 1. **Download the extension**
    - Click the green "Code" button on the repository page
