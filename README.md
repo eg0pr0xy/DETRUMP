@@ -1,13 +1,7 @@
-# DETRUMP Chrome Extension
+# DETRUMP - Chrome Extension
 
 <p align="center">
-<pre style="background-color: black; color: white; padding: 20px; display: inline-block; border-radius: 10px;">
-  ▓▓▓▓▓▓
-  ▓▓  ▓▓
-  ▓▓  ▓▓
-  ▓▓  ▓▓
-  ▓▓▓▓▓▓
-</pre>
+  <img src="./release/detrump-extension/icons/icon128.png" alt="DETRUMP Logo" width="128" height="128">
 </p>
 
 A Chrome extension that automatically detects and covers any text mentioning Trump with a black overlay. When users hover over the covered text, a tooltip appears indicating that the content has been hidden.
