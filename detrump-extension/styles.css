@@ -24,3 +24,12 @@
   white-space: nowrap;
   z-index: 1000;
 }
+
+.detrump-covered {
+  background-color: black;
+  color: black;
+  cursor: pointer;
+}
+.detrump-covered:hover {
+  color: white;
+}

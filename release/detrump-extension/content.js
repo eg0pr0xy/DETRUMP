@@ -11,16 +11,18 @@ function processDOMNode(node) {
   if (node.nodeType === Node.TEXT_NODE) {
     const text = node.textContent;
     
-    // Case-insensitive regex to match 'Trump' or 'Donald Trump'
-    const regex = /\b(donald\s+)?trump\b/gi;
+    // Case-insensitive regex to match 'Trump', 'Trumps', 'Donald Trump', or 'Donald Trumps'
+    const regex = /\b(donald\s+)?trumps?\b/gi;
     
     if (regex.test(text)) {
       // Create a wrapper span
       const span = document.createElement('span');
       span.innerHTML = text.replace(regex, '<span class="detrump-covered" title="Content Hidden by DETRUMP">█████</span>');
       
-      // Replace the text node with our span
-      node.parentNode.replaceChild(span, node);
+      // Replace the text node with our span only if parentNode exists
+      if (node.parentNode) {
+        node.parentNode.replaceChild(span, node);
+      }
     }
   } 
   // Process child nodes recursively

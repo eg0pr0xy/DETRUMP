@@ -11,9 +11,9 @@ function processDOMNode(node) {
   if (node.nodeType === Node.TEXT_NODE) {
     const text = node.textContent;
     
-    // Case-insensitive regex to match 'Trump' or 'Donald Trump'
-    const regex = /\b(donald\s+)?trump\b/gi;
-    
+    // Regex to match various forms of "Donald J. Trump", singular/plural
+    const regex = /\b(donald(\s+j\.?)?\s+trumps?|donalds?|trumps?)\b/gi;
+
     if (regex.test(text)) {
       // Create a wrapper span
       const span = document.createElement('span');
