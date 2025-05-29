@@ -1,10 +1,39 @@
 # DETRUMP Chrome Extension
 
 <p align="center">
-  <img src="release/detrump-extension/icons/icon128.svg" alt="DETRUMP Logo" width="128" height="128">
+<pre style="background-color: black; color: white; padding: 20px; display: inline-block; border-radius: 10px;">
+  ▓▓▓▓▓▓
+  ▓▓  ▓▓
+  ▓▓  ▓▓
+  ▓▓  ▓▓
+  ▓▓▓▓▓▓
+</pre>
 </p>
 
 A Chrome extension that automatically detects and covers any text mentioning Trump with a black overlay. When users hover over the covered text, a tooltip appears indicating that the content has been hidden.
+
+## Example
+
+Here's how the extension works in practice:
+
+![Example of DETRUMP extension in action](release/detrump-extension/screenshots/example-censored.png)
+
+The extension automatically detects and covers Trump-related text with a black overlay. Hovering over the censored text shows a tooltip indicating that content has been hidden.
+
+## Quick Installation
+
+1. Download this extension:
+   - Click the green "Code" button above
+   - Select "Download ZIP"
+   - Extract the ZIP file to a folder on your computer
+
+2. Install in Chrome:
+   - Open Chrome and go to `chrome://extensions/`
+   - Enable "Developer mode" in the top right corner
+   - Click "Load unpacked"
+   - Select the `release/detrump-extension` folder from the extracted files
+
+That's it! The extension will now automatically censor Trump-related content on all websites.
 
 ## Features
 
@@ -13,17 +42,6 @@ A Chrome extension that automatically detects and covers any text mentioning Tru
 - Hover tooltips to indicate hidden content
 - Minimal performance impact
 - Works on all websites
-
-## Installation
-
-### From Chrome Web Store
-*(Coming soon)*
-
-### Manual Installation
-1. Download or clone this repository
-2. Open Chrome and navigate to `chrome://extensions/`
-3. Enable "Developer mode" in the top right
-4. Click "Load unpacked" and select the `release/detrump-extension` directory
 
 ## Development
 
@@ -42,7 +60,7 @@ release/detrump-extension/
 - Developer mode enabled in Chrome extensions
 
 ### Testing
-1. Open `test.html` or `test_detailed.html` in your browser
+1. Open `test.html` in your browser
 2. The extension should automatically cover all Trump-related text
 3. Hover over covered text to see tooltips
 
